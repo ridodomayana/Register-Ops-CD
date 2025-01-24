@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   name: regapp-deployment
   labels: 
-     app: regapp
+     app: register-app-pipeline
 
 spec:
   replicas: 2 
   selector:
     matchLabels:
-      app: regapp
+      app: register-app-pipeline
 
   template:
     metadata:
       labels:
-        app: regapp
+        app: register-app-pipeline
     spec:
       containers:
-      - name: regapp
-        image: ashfaque9x/regapp
+      - name: register-app-pipeline
+        image: rido4good/register-app-pipeline
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
