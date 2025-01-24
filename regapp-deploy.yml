@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: register-app-pipeline
-        image: rido4good/register-app-pipeline
+        image: rido4good/register-app-pipeline:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
